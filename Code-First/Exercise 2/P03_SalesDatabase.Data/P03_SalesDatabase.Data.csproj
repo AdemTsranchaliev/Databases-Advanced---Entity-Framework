@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180723075940_initial.cs" />
+    <Compile Remove="Migrations\20180723081127_initial.cs" />
+    <Compile Remove="Migrations\20180723082910_SalesAddDateDefault.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="2.1.1" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\P03_SalesDatabase.Data.Models\P03_SalesDatabase.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>
